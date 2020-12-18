@@ -27,7 +27,7 @@ A   A
  A A
   A
 ```
-## Pour le moment cette version implémente :
+## Explication de l'algorithme :
 La principale astuce de ce code, se situe dans l'utilisation de deux boucles imbriquées un peu spéciales. Il s'agit de boucles POUR dans le pas est variable.
 <br>En effet, le motif à afficher étant symétrique verticalement et horizontalement, l'algorithme est le même pour les 4 parties du motif. En utilisant des boucles POUR dont le pas est de 1 au début et passe à -1 une fois la moitié du motif passée, on s'évite de nombreuses conditions à implémenter.
 <br>Pour faire plus simple, les boucles effectuent le parcours suivant pour une taille de 5 : 0, 1, 2, 1, 0.
