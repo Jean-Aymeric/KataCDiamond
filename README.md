@@ -32,3 +32,31 @@ A   A
 * la version simplifiée
 * la version simplifiée remplie
 * la version avec taille paramétrable
+
+## Utilisation :
+* Pour afficher un diamant de taille 7 vide :
+```C
+printDiamond ('A', 7, 0);
+```
+```
+   A
+  A A
+ A   A
+A     A
+ A   A
+  A A
+   A
+```
+* Pour afficher un diamant de taille 7 rempli :
+```C
+printDiamond ('A', 7, 1);
+```
+```
+   A
+  AAA
+ AAAAA
+AAAAAAA
+ AAAAA
+  AAA
+   A
+```
