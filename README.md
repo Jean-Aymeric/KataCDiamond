@@ -40,6 +40,7 @@ La principale astuce de ce code, se situe dans l'utilisation de deux boucles imb
 |**2**|C| | | |C|
 |**1**| |B| |B| |
 |**0**| | |A| | |
+
 <br/>Pour faire plus simple, les boucles effectuent, pour une taille de 5, le parcours suivant  : 0, 1, 2, 1, 0.
 <br/>Il suffit ensuite de vérifier si la somme des 2 variables des POUR est égale à la taille du diamant est le tour est joué.
 <br/>
