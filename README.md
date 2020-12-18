@@ -28,9 +28,9 @@ A   A
   A
 ```
 ## Explication de l'algorithme :
-La principale astuce de ce code, se situe dans l'utilisation de deux boucles imbriquées un peu spéciales. Il s'agit de boucles `for` dont le pas est variable.
+La principale astuce de ce code, se situe dans l'utilisation de deux boucles imbriquées un peu spéciales. Il s'agit de boucles `for` dont le pas (`i++`) est variable (`i += stepI`).
 <br/>En algo cela donne :
-<br/>*L'utilisation de boucle `POUR` de pas variable ne serait pas possible ici en algo. Je les ai donc remplacées par des boucle `TANT QUE`.*
+<br/>*L'utilisation de boucle `POUR`, de `PAS` variable ne serait pas possible ici en algo. Je les ai donc remplacées par des boucles `TANT QUE`.*
 ```
 DECLARATION
 |   TAILLE  EST UNE CONSTANTE = 5
