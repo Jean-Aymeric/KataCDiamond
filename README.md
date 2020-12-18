@@ -137,6 +137,7 @@ D     D
 ```C
 printDiamond ('A', 7, 1, 1);
 ```
+```
    A
   BBB
  CCCCC
