@@ -83,17 +83,20 @@ FIN
 <br/>Pour faire plus simple, les boucles effectuent, pour une taille de 5, le parcours suivant  : 0, 1, 2, 1, 0.
 <br/>Il suffit ensuite de vérifier si la somme des 2 variables des POUR est égale à la taille du diamant est le tour est joué.
 <br/>
+### Pour le changement de lettre :
+Le fait d'avoir ces deux boucles imbriquées facilite aussi grandement le changement de lettre.
+Il suffit d'ajouter la valeur du compteur de la première boucle `i`, à la lettre que l'ont souhaite imprimer.
 
-
-### Pour le moment cette version implémente :
+### Cette version implémente :
 * la version simplifiée
 * la version simplifiée remplie
 * la version avec taille paramétrable
-
+* la version avec changement de lettre
+* 
 ### Utilisation :
-* Pour afficher un diamant de taille 7 vide :
+* Pour afficher un diamant simplifié de taille 7 vide :
 ```C
-printDiamond ('A', 7, 0);
+printDiamond ('A', 7, 0, 0);
 ```
 ```
    A
@@ -104,9 +107,9 @@ A     A
   A A
    A
 ```
-* Pour afficher un diamant de taille 7 rempli :
+* Pour afficher un diamant simplifié de taille 7 rempli :
 ```C
-printDiamond ('A', 7, 1);
+printDiamond ('A', 7, 1, 0);
 ```
 ```
    A
@@ -115,5 +118,30 @@ printDiamond ('A', 7, 1);
 AAAAAAA
  AAAAA
   AAA
+   A
+```
+* Pour afficher un diamant de taille 7 vide :
+```C
+printDiamond ('A', 7, 0, 1);
+```
+```
+   A
+  B B
+ C   C
+D     D
+ C   C
+  B B
+   A
+```
+* Pour afficher un diamant de taille 7 rempli :
+```C
+printDiamond ('A', 7, 1, 1);
+```
+   A
+  BBB
+ CCCCC
+DDDDDDD
+ CCCCC
+  BBB
    A
 ```
