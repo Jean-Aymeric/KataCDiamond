@@ -15,7 +15,7 @@ void printDiamond (const char diamondCharacter, const unsigned int diamondSize, 
             if ( ((i + j) == diamondSize / 2) && (diamondFilled == 0)
                 || ((i + j) >= diamondSize / 2) && (diamondFilled != 0)
                ) {
-                printf ("%c", diamondCharacter);
+                printf ("%c", diamondCharacter + i);
             } else {
                 printf (" ");
             }
