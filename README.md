@@ -1,8 +1,7 @@
-# Une solution, que je pense élégante, pour le Kata Diamond.
+## Une solution, que je pense élégante, pour le Kata Diamond.
 Pour rappel ce Kata affiche un diamant à l'écran en commençant par une lettre et en l'augmentant suivant la position dans le diamant.
 
-#### Par exemple voici le diamant avec la lettre 'A' :
--------------------------------------------------
+##### Par exemple voici le diamant avec la lettre 'A' :
 ```
   A
  B B
@@ -11,8 +10,7 @@ C   C
   A
 ```
  
-#### Il est aussi possible de faire une version remplie du diamant :
--------------------------------------------------
+##### Il est aussi possible de faire une version remplie du diamant :
 ```
   A
  BBB
@@ -21,8 +19,7 @@ CCCCC
   A
 ```
 
-#### Ou encore une version simplifiée ne changeant pas de lettre :
--------------------------------------------------
+##### Ou encore une version simplifiée ne changeant pas de lettre :
 ```
   A
  A A
@@ -30,7 +27,7 @@ A   A
  A A
   A
 ```
-## Explication de l'algorithme :
+### Explication de l'algorithme :
 La principale astuce de ce code, se situe dans l'utilisation de deux boucles imbriquées un peu spéciales. Il s'agit de boucles `for` dont le pas (`i++`) est variable (`i += stepI`).
 <br/>En algo cela donne :
 <br/>*L'utilisation de boucle `POUR`, de `PAS` variable ne serait pas possible ici en algo. Je les ai donc remplacées par des boucles `TANT QUE`.*
@@ -88,12 +85,12 @@ FIN
 <br/>
 
 
-## Pour le moment cette version implémente :
+### Pour le moment cette version implémente :
 * la version simplifiée
 * la version simplifiée remplie
 * la version avec taille paramétrable
 
-## Utilisation :
+### Utilisation :
 * Pour afficher un diamant de taille 7 vide :
 ```C
 printDiamond ('A', 7, 0);
