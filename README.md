@@ -1,4 +1,4 @@
-# Une solution que je pense élégante pour le Kata Diamond.
+# Une solution, que je pense élégante, pour le Kata Diamond.
 Pour rappel ce Kata affiche un diamant à l'écran en commençant par une lettre et en l'augmentant suivant la position dans le diamant.
 
 Par exemple voici le diamant avec la lettre 'A'.
