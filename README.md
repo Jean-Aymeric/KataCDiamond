@@ -28,7 +28,45 @@ A   A
   A
 ```
 ## Explication de l'algorithme :
-La principale astuce de ce code, se situe dans l'utilisation de deux boucles imbriquées un peu spéciales. Il s'agit de boucles POUR dont le pas est variable.
+La principale astuce de ce code, se situe dans l'utilisation de deux boucles imbriquées un peu spéciales. Il s'agit de boucles `for` dont le pas est variable.
+<br/>En algo cela donne :
+```
+DECLARATION
+|   TAILLE  EST UNE CONSTANTE = 5
+|   i       EST UN ENTIER
+|   pasDeI  EST UN ENTIER
+|   j       EST UN ENTIER
+|   pasDeJ  EST UN ENTIER
+FIN DECLARATION
+
+DEBUT
+|   i <- 0
+|   pasDeI <- 1
+|   TANT QUE i >= 0 FAIRE
+|   |   SI i >= TAILLE / 2 ALORS
+|   |   |   pasDeI <- -1
+|   |   FIN SI
+|   |
+|   |   j <- 0
+|   |   TANT QUE j >= 0 FAIRE
+|   |   |   SI j >= TAILLE / 2 ALORS
+|   |   |   |   pasDeJ <- -1
+|   |   |   FIN SI
+|   |   |
+|   |   |   SI i + j = 2 ALORS
+|   |   |   |   AFFICHER 'A'
+|   |   |   SINON
+|   |   |   |   AFFICHER ' '
+|   |   |   FIN SI
+|   |   |
+|   |   |   j <- j + pasDeJ
+|   |   FIN TANT QUE
+|   |
+|   |   AFFICHER RETOUR CHARRIOT
+|   |   i <- i + pasDeI
+|   FIN TANT QUE
+FIN 
+```
 <br/>En effet, le motif à afficher étant symétrique verticalement et horizontalement, l'algorithme est le même pour les 4 parties du motif. En utilisant des boucles POUR dont le pas est de 1 au début et passe à -1 une fois la moitié du motif passée, on se facilite la tâche.
 <br/>Exemple ici avec un diamant de taille 5.
 <br/>
