@@ -1,7 +1,7 @@
 # Une solution, que je pense élégante, pour le Kata Diamond.
 Pour rappel ce Kata affiche un diamant à l'écran en commençant par une lettre et en l'augmentant suivant la position dans le diamant.
 
-Par exemple voici le diamant avec la lettre 'A'.
+###- Par exemple voici le diamant avec la lettre 'A' ;
 ```
   A
  B B
@@ -69,7 +69,7 @@ DEBUT
 FIN 
 ```
 <br/>En effet, le motif à afficher étant symétrique verticalement et horizontalement, l'algorithme est le même pour les 4 parties du motif. En utilisant des boucles POUR dont le pas est de 1 au début et passe à -1 une fois la moitié du motif passée, on se facilite la tâche.
-<br/>Exemple ici avec un diamant de taille 5.
+<br/>*Exemple ici avec un diamant de taille 5 :*
 <br/>
 | |**0**|**1**|**2**|**1**|**0**|
 |-|-|-|-|-|-|
